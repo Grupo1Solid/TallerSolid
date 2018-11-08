@@ -28,7 +28,7 @@ public class Sistema {
         OperacionesAderezo.quitarAderezoPastel(pastel_chocolate, Aderezo.CREMA);
         OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
         System.out.println(pastel_chocolate);
-        
+           
         
     }
 }
