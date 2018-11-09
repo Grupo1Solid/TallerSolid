@@ -5,6 +5,7 @@
  */
 package Postres_S_OCP;
 
+import Otros.Aderezo;
 import java.util.ArrayList;
 
 /**
@@ -12,9 +13,9 @@ import java.util.ArrayList;
  * @author Diego
  */
 public class HeladoN extends Postre{
-    
-    public HeladoN (String sabor){
-        super(sabor);
+   
+    public HeladoN(String sabor, double precioParcial, ArrayList<Aderezo> aderezos) {
+        super(sabor, precioParcial, aderezos);
     }
     
 }

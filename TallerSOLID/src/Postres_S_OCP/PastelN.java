@@ -5,13 +5,17 @@
  */
 package Postres_S_OCP;
 
+import Otros.Aderezo;
+import java.util.ArrayList;
+
 /**
  *
  * @author Diego
  */
 public class PastelN extends Postre {
     
-    public PastelN(String sabor){
-        super(sabor);
+    public PastelN(String sabor, double precioParcial, ArrayList<Aderezo> aderezos) {
+        super(sabor, precioParcial, aderezos);
     }
+    
 }

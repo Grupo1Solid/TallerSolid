@@ -10,8 +10,8 @@ package PrincipalCorregido;
  * @author Diego
  */
 import Postres_S_OCP.*;
-import Procesos.*;
-import Leche.*;
+import ProcesosOCP.*;
+import LecheOCP.*;
 import Otros.*;
 public class SistemaCorregido{
     
@@ -21,14 +21,14 @@ public class SistemaCorregido{
         
         // Producir Helado
         Postre helado_vainilla = new HeladoN("Vainilla");
-        OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.FRUTILLA);
+        OperacionesAderezo.anadirAderezo(helado_vainilla, Aderezo.CREMA);
+        OperacionesAderezo.anadirAderezo(helado_vainilla, Aderezo.FRUTILLA);
         System.out.println(helado_vainilla);
         
         // Producir Pastel
         Postre pastel_chocolate = new PastelN ("Chocolate");
-        OperacionesAderezo.quitarAderezoPastel(pastel_chocolate, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
+        OperacionesAderezo.quitarAderezo(pastel_chocolate, Aderezo.CREMA);
+        OperacionesAderezo.anadirAderezo(pastel_chocolate, Aderezo.FRUTILLA);
         System.out.println(pastel_chocolate);
      
     }

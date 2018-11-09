@@ -12,15 +12,21 @@ import java.util.ArrayList;
  *
  * @author Diego
  */
-public class Postre {
+public class Postre{
     
     private String sabor;
     private double precioParcial;
     private ArrayList<Aderezo> aderezos;
-    
-    public Postre (String sabor){
-        aderezos= new ArrayList<>();
-        this.sabor=sabor;
+
+    public Postre(String sabor, double precioParcial, 
+        ArrayList<Aderezo> aderezos) {
+        this.sabor = sabor;
+        this.precioParcial = precioParcial;
+        this.aderezos = aderezos;
+    }
+    public Postre(String Sabor){
+        this.sabor=Sabor;
+        this.aderezos=new ArrayList<>();
     }
     
     public double calcularPrecioFinal(){
@@ -31,6 +37,26 @@ public class Postre {
 
     public ArrayList<Aderezo> getAderezos() {
         return aderezos;
+    }
+
+    public void setAderezos(ArrayList<Aderezo> aderezos) {
+        this.aderezos = aderezos;
+    }
+
+    public String getSabor() {
+        return sabor;
+    }
+
+    public void setSabor(String sabor) {
+        this.sabor = sabor;
+    }
+
+    public double getPrecioParcial() {
+        return precioParcial;
+    }
+
+    public void setPrecioParcial(double precioParcial) {
+        this.precioParcial = precioParcial;
     }
    
     @Override
