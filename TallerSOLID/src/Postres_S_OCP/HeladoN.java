@@ -17,5 +17,8 @@ public class HeladoN extends Postre{
     public HeladoN(String sabor, double precioParcial, ArrayList<Aderezo> aderezos) {
         super(sabor, precioParcial, aderezos);
     }
+    public HeladoN(String sabor){
+        super(sabor);
+    }
     
 }
